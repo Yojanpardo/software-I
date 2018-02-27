@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=iso8859-1" />
+<meta name="author" content="haran" />
+<meta name="generator" content="Windows Notepad" />
+<link rel="stylesheet" type="text/css" href="estilos.css" />
+<link rel="stylesheet" type="text/css" href="colores.css"/>
+<title>Demo</title>
+<style type="text/css"> .textoexp {
+ font-family: Arial;
+color: black;
+font-size: 30pt;
+text-align: left;
+ letter-spacing: -20px;
+}
+</style>
+<script type="text/javascript"> function
+expandirTexto(inicio, fin, paso, velo){
+ if (inicio < fin){
+ document.getElementById("textoexpand").style.letterSpacing = inicio+"px";
+inicio=inicio+paso;
+setTimeout("expandirTexto("+inicio+","+fin+","+paso+","+velo+")",velo);
+}
+}
+</script>
+</head>
+<body onLoad="expandirTexto(-20,30,1,5);">
+<div id="arriba"></div>
+ <!-- ###### Cabecera ###### -->
+<div id="cabecera">
+<a href="./index.html" class="cabeceraTitulo" title="Homepage">
+<span class="textoexp" id="textoexpand">EmpresaX</span></a>
+<div class="cabeceraEnlaces">.
+<a href="./index.html">Mapa Web</a>
+<a href="./index.html">Contacto</a>
+<a href="./index.html">Ayuda</a>
+</div>
+</div>
+<div class="barraMenu">
+<a href="./index.html">Productos</a>
+<a href="./index.html">Soluciones</a>
+<a href="./index.html">Tienda</a>
+<a href="./index.html">Atenci&oacute;n usuario</a>
+<a href="./index.html">Contactenos</a>
+<a href="./index.html">Sobre EmpresaX</a>
+</div>
+<!-- ###### Izquierda ###### -->
+<div class="barraIzquierda">
+<div class="barraIzquierdaTitulo">Contenidos</div>
+<a href="#bien">Bienvenido</a>
+<a href="#mision">Nuestra Misión</a>
+<a href="#logros">Nuestros clientes</a>
+ <a href="#futuro">El futuro</a>
+<div class="barraIzquierdaTitulo">EmpresaX</div>
+<a href="index.html">Europa</a>
+<a href="index.html">América Sur</a>
+<a href="index.html">ásia/Pacifico</a>
+<a href="index.html">Resto Mundo</a>
+<div class="barraIzquierdaTitulo">Buscar</div>
+<span class="barraTexto"><form method="GET">
+<Input type=text size=13 name="texto"><input type=submit
+name="Busca" value="Busca"></form></span>
+</div>
+<!-- ###### Derecha ###### -->
+<div class="barraDerecha">
+<div class="barraIzquierdaTitulo">Novedades</div>
+<div class="barraTexto"><strong>1 Oct 03</strong><br />
+Lanzamiento de VaporWare 1.0! Después de años de versiones
+de evaluación VaporWare 1.0 lanzado al mercado.
+</div>
+<div class="barraTexto"><strong>15 May 03</strong><br />
+Inaugurada la nueva sede del departamento de I+D en
+Sant Bartomeu del Grau. </div>
+<div class="barraTexto"><a href="./index.html">más noticias...</a></div>
+<div class="barraIzquierdaTitulo">Descargas</div>
+<div class="barraTexto"><strong>X-Linux</strong><br />
+<a href="./index.html">datos </a>&nbsp; &nbsp;<a href="./index.html">descarga</a></div>
+<div class="barraTexto"><strong>VaporWare</strong><br />
+<a href="./index.html">datos</a>&nbsp; &nbsp;<a href="./index.html">descarga</a></div>
+</div>
+<!-- ###### Texto ###### -->
+<div id="textoCuerpo">
+<h1 id="Bienvenida"
+style="border-top: none; padding-top: 0;">Bienvenidos a EmpresaX!</h1>
+<p>Esta es la Web de EmpresaX, una empresa ficticia de desarrollo de
+software basado en software libre.
+<h1 id="Notas">Notas de este diseño</h1>
+<dl>
+<dt>Cumplimiento de estándares</dt>
+<dd>Hemos seguido los siguientes estándares
+XHTML 1.0 Strict y CSS 2 para visualización con la mayoría
+ de navegadores.</dd>
+ <dt>Diseño sin tablas</dt>
+<dd>El diseño está realizado sin uso de tablas, permitiendo una mayor
+claridad y velocidad de representación.</dd>
+<dt>Javascript+DOM</dt>
+<dd>Hemos usado Javascript+DOM para la animación de tal forma que se
+representa correctamente en todos los navegadores.</dd>
+<dt>Dos hojas de estilo</dt>
+<dd>Se usa una hoja de estilo separada para el esquema de colores.</dd>
+</dl>
+</div>
+</body>
+</html>

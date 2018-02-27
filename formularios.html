@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introducción a los formularios</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+</head>
+<body>
+	<div class="container">
+	<H1>Prueba de formulario</H1>
+	<FORM METHOD=GET>
+		Nombre: <INPUT TYPE=TEXT NAME=NOMBRE SIZE=10><BR>
+		Apellidos: <INPUT TYPE=TEXT NAME=APELLIDOS SIZE=30><BR>
+		Clave: <INPUT TYPE=PASSWORD NAME=PASS SIZE=8><BR>
+		<HR>
+		Sexo: <BR>
+		<INPUT TYPE=“radio” NAME=“sexo” id="Hombre">Hombre
+		<INPUT TYPE=“RADIO” NAME=“SEXO”>Mujer
+		<BR>
+		Aficiones:<BR>
+		<INPUT TYPE=“CHECKBOX” NAME=“DEPORTES”>Deportes
+		<INPUT TYPE=“CHECKBOX” NAME=“MUSICA”>Música
+		<INPUT TYPE=“CHECKBOX” NAME=“LECTURA”>Lectura
+		<BR>
+		Procedencia:<BR>
+		<SELECT name=“PROCEDENCIA”>
+			<option> África
+			<option> Antártida
+			<option> América
+			<option> Asia
+			<option> Europa
+			<option> Oceanía
+		</SELECT>
+		<HR>Dónde le gustaría viajar:<BR>
+		<SELECT name=“destino” MULTIPLE SIZE=4>
+	 		<option> África
+	 		<option> Antártida
+			<option> América
+			<option> Asia
+			<option> Europa
+			<option> Oceanía
+		</SELECT>
+		<BR>
+		Opine:
+		<BR>
+		<TEXTAREA COLS=25 ROWS=10 NAME=“OPINA”>
+		¡Escriba aquí su opinión!
+	</TEXTAREA>
+	<HR>
+	<INPUT TYPE=SUBMIT> <INPUT TYPE=RESET>
+	</FORM>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+</html>
